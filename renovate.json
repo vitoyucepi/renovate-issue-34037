@@ -1,0 +1,6 @@
+{
+    "extends": [
+        "config:best-practices",
+        "customManagers:dockerfileVersions"
+    ]
+}

@@ -1,6 +1,7 @@
 {
     "extends": [
-        "config:best-practices",
-        "customManagers:dockerfileVersions"
+      "config:recommended",
+      ":pinAllExceptPeerDependencies",
+      "customManagers:dockerfileVersions"
     ]
-}
+  }

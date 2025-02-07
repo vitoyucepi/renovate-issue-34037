@@ -162,7 +162,7 @@ DEBUG: File config
       {
         "hostType": "docker",
         "matchHost": "hub.docker.com",
-        "username": "mdpprodrenovatedc2",
+        "username": "mdpprodrenovatedc",
         "password": "***********"
       },
       {
@@ -274,7 +274,7 @@ DEBUG: Combined config
       {
         "hostType": "docker",
         "matchHost": "hub.docker.com",
-        "username": "mdpprodrenovatedc2",
+        "username": "mdpprodrenovatedc",
         "password": "***********"
       },
       {
@@ -431,7 +431,7 @@ DEBUG: Resetting npmrc
 DEBUG: checkOnboarding()
 DEBUG: isOnboarded()
 DEBUG: findPr(renovate/configure, Configure Renovate, !open)
-DEBUG: http cache: saving https://api.github.com/repos/vitoyucepi/renovate-issue-34037/pulls?per_page=20&state=all&sort=updated&direction=desc&page=1 (etag=W/"c10665535871d054d9c73fc384cd5e9f347e50710089f87418dbdd5558149010", lastModified=undefined)
+DEBUG: http cache: saving https://api.github.com/repos/vitoyucepi/renovate-issue-34037/pulls?per_page=20&state=all&sort=updated&direction=desc&page=1 (etag=W/"22e9de90d6bae204268330a2225a35dc0da7e2df1a97edaa1d59e52235792e51", lastModified=undefined)
 DEBUG: getPrList success
 {
   "pullsTotal": 4
@@ -441,14 +441,13 @@ DEBUG: getPrList success
 
 DEBUG: findPr(renovate/configure, chore: Configure Renovate, !open)
 DEBUG: Checking cached config file name
-DEBUG: http cache: Using cached response: https://api.github.com/repos/vitoyucepi/renovate-issue-34037/contents/renovate.json from 2025-02-06T21:53:09.805Z
+DEBUG: http cache: Using cached response: https://api.github.com/repos/vitoyucepi/renovate-issue-34037/contents/renovate.json from 2025-02-07T06:39:04.157Z
 DEBUG: Existing config file confirmed
 DEBUG: Repository config
 {
   "fileName": "renovate.json"
   "config": {
     "extends": [
-      "config:recommended",
       ":pinAllExceptPeerDependencies",
       "customManagers:dockerfileVersions"
     ]
@@ -456,32 +455,22 @@ DEBUG: Repository config
 }
 
 DEBUG: Repo is onboarded
-DEBUG: http cache: Using cached response: https://api.github.com/repos/vitoyucepi/renovate-issue-34037/contents/renovate.json from 2025-02-06T21:53:09.805Z
+DEBUG: http cache: Using cached response: https://api.github.com/repos/vitoyucepi/renovate-issue-34037/contents/renovate.json from 2025-02-07T06:39:04.157Z
 DEBUG: migrateAndValidate()
 DEBUG: No config migration necessary
 DEBUG: Found repo ignorePaths
 {
   "ignorePaths": [
     "**/node_modules/**",
-    "**/bower_components/**",
-    "**/vendor/**",
-    "**/examples/**",
-    "**/__tests__/**",
-    "**/test/**",
-    "**/tests/**",
-    "**/__fixtures__/**"
+    "**/bower_components/**"
   ]
 }
 
 DEBUG: No vulnerability alerts enabled for repo
 DEBUG: No vulnerability alerts found
-DEBUG: findIssue(Dependency Dashboard)
-DEBUG: Issues cache: synced
-DEBUG: Found issue 1
-DEBUG: http cache: saving https://api.github.com/repos/vitoyucepi/renovate-issue-34037/issues/1 (etag=W/"80c53deca3105d54cac721266093c9e9c16e34947bf9cd2ed0b39ece0287683f", lastModified=Fri, 07 Feb 2025 05:11:25 GMT)
 DEBUG: No baseBranches
 DEBUG: extract()
-DEBUG: Cached extract for sha=c979770bf215cf6f79bc7e114f8be30a8487eec4 is valid and can be used
+DEBUG: Cached extract for sha=5f3e8a7dad17331aa7bd55794ceffe6cfedd76ca is valid and can be used
 DEBUG: Deleted cached dep updates
 INFO: Dependency extraction complete
 {
@@ -504,9 +493,6 @@ INFO: Dependency extraction complete
   }
 }
 
-DEBUG: hostRules: no authentication for repology.org
-DEBUG: Using throttle 2000 intervalMs for host repology.org
-DEBUG: Using queue: host=repology.org, concurrency=1
 DEBUG: PackageFiles.add() - Package file saved for base branch
 {
   "baseBranch": "main"
@@ -528,7 +514,7 @@ DEBUG: Repository libYears
 
 DEBUG: branchifyUpgrades
 DEBUG: detectSemanticCommits()
-DEBUG: semanticCommits: returning "disabled" from cache
+DEBUG: semanticCommits: returning "enabled" from cache
 DEBUG: 0 flattened updates found: 
 DEBUG: Returning 0 branch(es)
 DEBUG: config.repoIsOnboarded=true
@@ -543,7 +529,7 @@ DEBUG: packageFiles with updates
             "autoReplaceStringTemplate": "{{depName}}{{#if newValue}}:{{newValue}}{{/if}}{{#if newDigest}}@{{newDigest}}{{/if}}",
             "currentValue": "24.04",
             "currentVersion": "24.04",
-            "currentVersionAgeInDays": 2,
+            "currentVersionAgeInDays": 3,
             "currentVersionTimestamp": "2025-02-04T06:04:37.126Z",
             "datasource": "docker",
             "depName": "ubuntu",
@@ -600,27 +586,21 @@ DEBUG: packageFiles with updates
 }
 
 DEBUG: detectSemanticCommits()
-DEBUG: semanticCommits: returning "disabled" from cache
+DEBUG: semanticCommits: returning "enabled" from cache
 DEBUG: processRepo()
 DEBUG: Processing 0 branches: 
 DEBUG: 0 PRs are currently open
 DEBUG: ConcurrentPRs count = 0
 DEBUG: 0 already existing branches found.
 DEBUG: Branches count = 0
-DEBUG: Calculating PRs created so far in this hour currentHourStart=2025-02-07T05:00:00.000Z
+DEBUG: Calculating PRs created so far in this hour currentHourStart=2025-02-07T06:00:00.000Z
 DEBUG: 0 PRs have been created so far in this hour.
 DEBUG: HourlyPRs count = 0
-DEBUG: http cache: Using cached response: https://api.github.com/repos/vitoyucepi/renovate-issue-34037/contents/renovate.json from 2025-02-06T21:53:09.805Z
+DEBUG: http cache: Using cached response: https://api.github.com/repos/vitoyucepi/renovate-issue-34037/contents/renovate.json from 2025-02-07T06:39:04.157Z
 DEBUG: Config does not need migration
 DEBUG: ensureDependencyDashboard()
-DEBUG: Ensuring Dependency Dashboard
-DEBUG: Checking packageFiles for deprecated packages
-DEBUG: http cache: saving https://api.github.com/repos/vitoyucepi/renovate-issue-34037/issues/1 (etag=W/"80c53deca3105d54cac721266093c9e9c16e34947bf9cd2ed0b39ece0287683f", lastModified=Fri, 07 Feb 2025 05:11:25 GMT)
-DEBUG: http cache: saving https://api.github.com/repos/vitoyucepi/renovate-issue-34037/issues/1 (etag=W/"80c53deca3105d54cac721266093c9e9c16e34947bf9cd2ed0b39ece0287683f", lastModified=Fri, 07 Feb 2025 05:11:25 GMT)
-DEBUG: ensureIssue(Dependency Dashboard)
-DEBUG: http cache: saving https://api.github.com/repos/vitoyucepi/renovate-issue-34037/issues/1 (etag=W/"80c53deca3105d54cac721266093c9e9c16e34947bf9cd2ed0b39ece0287683f", lastModified=Fri, 07 Feb 2025 05:11:25 GMT)
-DEBUG: Patching issue
-DEBUG: Issue updated
+DEBUG: Closing Dependency Dashboard
+DEBUG: Issues cache: synced
 DEBUG: checkReconfigureBranch()
 DEBUG: No reconfigure branch found
 DEBUG: Removing any stale branches
@@ -633,7 +613,7 @@ DEBUG: Branch summary
   "baseBranches": [
     {
       "branchName": "main",
-      "sha": "c979770bf215cf6f79bc7e114f8be30a8487eec4"
+      "sha": "5f3e8a7dad17331aa7bd55794ceffe6cfedd76ca"
     }
   ]
   "branches": []
@@ -655,30 +635,30 @@ DEBUG: Repository result: done, status: onboarded, enabled: true, onboarded: tru
 DEBUG: Repository timing splits (milliseconds)
 {
   "splits": {
-    "init": 2241,
-    "extract": 257,
-    "lookup": 2315,
+    "init": 1081,
+    "extract": 120,
+    "lookup": 378,
     "onboarding": 1,
-    "update": 2
+    "update": 4
   }
-  "total": 5291
+  "total": 1688
 }
 
 DEBUG: Package cache statistics
 {
   "get": {
     "count": 2,
-    "avgMs": 6,
-    "medianMs": 8,
-    "maxMs": 8,
-    "totalMs": 12
+    "avgMs": 15,
+    "medianMs": 24,
+    "maxMs": 24,
+    "totalMs": 29
   }
   "set": {
-    "count": 1,
-    "avgMs": 4,
-    "medianMs": 4,
-    "maxMs": 4,
-    "totalMs": 4
+    "count": 0,
+    "avgMs": 0,
+    "medianMs": 0,
+    "maxMs": 0,
+    "totalMs": 0
   }
 }
 
@@ -686,25 +666,16 @@ DEBUG: HTTP statistics
 {
   "hosts": {
     "api.github.com": {
-      "count": 5,
-      "reqAvgMs": 163,
+      "count": 3,
+      "reqAvgMs": 123,
       "reqMedianMs": 117,
-      "reqMaxMs": 384,
+      "reqMaxMs": 171,
       "queueAvgMs": 2,
       "queueMedianMs": 0,
-      "queueMaxMs": 10
-    },
-    "repology.org": {
-      "count": 2,
-      "reqAvgMs": 221,
-      "reqMedianMs": 325,
-      "reqMaxMs": 325,
-      "queueAvgMs": 503,
-      "queueMedianMs": 1003,
-      "queueMaxMs": 1003
+      "queueMaxMs": 5
     }
   }
-  "requests": 7
+  "requests": 3
 }
 
 DEBUG: HTTP cache statistics
@@ -713,10 +684,6 @@ DEBUG: HTTP cache statistics
     "/repos/vitoyucepi/renovate-issue-34037/contents/renovate.json": {
       "hit": 3,
       "miss": 0
-    },
-    "/repos/vitoyucepi/renovate-issue-34037/issues/1": {
-      "hit": 0,
-      "miss": 4
     },
     "/repos/vitoyucepi/renovate-issue-34037/pulls": {
       "hit": 0,
@@ -727,28 +694,27 @@ DEBUG: HTTP cache statistics
 
 DEBUG: Lookup statistics
 {
-  "docker": {
-    "count": 1,
-    "avgMs": 316,
-    "medianMs": 316,
-    "maxMs": 316,
-    "totalMs": 316
-  }
   "repology": {
     "count": 1,
-    "avgMs": 2262,
-    "medianMs": 2262,
-    "maxMs": 2262,
-    "totalMs": 2262
+    "avgMs": 25,
+    "medianMs": 25,
+    "maxMs": 25,
+    "totalMs": 25
+  }
+  "docker": {
+    "count": 1,
+    "avgMs": 357,
+    "medianMs": 357,
+    "maxMs": 357,
+    "totalMs": 357
   }
 }
 
 INFO: Repository finished
 {
   "cloned": false
-  "durationMs": 5291
+  "durationMs": 1688
 }
-
 ```
 
 </details>

@@ -6,16 +6,16 @@ Renovate cannot update the `tzdata` version if `:pinAllExceptPeerDependencies` p
 It will print a debug message
 ```json
 {
-    "depName": "ubuntu_24_04/tzdata",
     "currentValue": "2024a-3ubuntu1.1",
     "datasource": "repology",
-    "versioning": "loose",
-    "replaceString": "# renovate: datasource=repology depName=ubuntu_24_04/tzdata versioning=loose\nARG TZDATA_VERSION=2024a-3ubuntu1.1\n",
-    "updates": [],
+    "depName": "ubuntu_24_04/tzdata",
     "packageName": "ubuntu_24_04/tzdata",
+    "registryUrl": "https://repology.org",
+    "replaceString": "# renovate: datasource=repology depName=ubuntu_24_04/tzdata versioning=loose\nARG TZDATA_VERSION=2024a-3ubuntu1.1\n",
+    "skipReason": "invalid-value",
+    "versioning": "loose",
     "warnings": [],
-    "registryUrl": "https://repology.org/",
-    "skipReason": "invalid-value"
+    "updates": []
 }
 ```
 
